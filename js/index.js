@@ -7,6 +7,7 @@ funBus.addEventListener('mouseout', function (){
     funBus.style.transform = "scale(1)";
 })
 
+TweenMax.to(funBus, 2, {right:900});
 // 2. Whenever ANY key is pressed, turn the body's background into a gradient
 const body = document.querySelector('body')
 body.addEventListener('keydown', function () {
@@ -78,7 +79,7 @@ destinationH4.addEventListener('dblclick', (() => {
 }))
 
 
-// 
+// Prevent Default on <a> elements.
 const links = document.querySelectorAll('a')
 links.forEach((item) => {
     item.addEventListener('click', ((e) => {
