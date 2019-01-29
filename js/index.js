@@ -42,19 +42,26 @@ funBus.addEventListener('load', (() => {
 }))
 
 // 6. When focusing on one of the destination divs, add a 1px solid red border
-const destinations = document.querySelector('.myDestination');
-destinations.addEventListener('focus', function () {
-    destinations.textContent= "This is still a work in progress. Thanks for your patience!";
+const firstLink = document.querySelector('#firstLink');
+firstLink.addEventListener('focus', function () {
+    console.log("This is still a work in progress. Thanks for your patience!");
 })
 
 // 7. when the window is resized, change the color of the 'Fun Bus' header
-const header = document.querySelector('header .nav-container h1');
-window.addEventListener('resize', (() => {
-    console.log("It's working!")
-    header.style.color = "green"
-}))
+let count = 0;
+window.addEventListener("resize", () => {
+    if (count < 1){
+        alert("viewport resized")
+        count+=1
+    }
+})
 
-// 8. When scrolling, don't display any content on the body
+
+// 8. When scrolling, just log to console.
+window.addEventListener('scroll', () => {
+    console.log("you scrolled")
+})
+
 
 // 9.
 
