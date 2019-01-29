@@ -38,7 +38,7 @@ function drop () {this.append(funBus);}
 
 // 5. Console.log("OMG THE IMAGE ACTUALLY LOADED! YOU'RE A WIZARD, 'Arry") when the img loads.
 funBus.addEventListener('load', (() => {
-    console.log("OMG, THE IMAGE ACTUALLY LOADED! You're a wizard 'Arry!")
+    console.log("OMG, THE IMAGE ACTUALLY LOADED! Yer' a wizard 'Arry!")
 }))
 
 // 6. When focusing on one of the destination divs, add a 1px solid red border
@@ -63,9 +63,19 @@ window.addEventListener('scroll', () => {
 })
 
 
-// 9.
+// 9. Had to add a textarea at the very bottom of the page to test this, but it works flawlessly!
+const textArea = document.querySelector('#TestArea')
+textArea.addEventListener('select', ((e) => {
+    const selection = e.target.value.substring(e.target.selectionStart, e.target.selectionEnd);
+    console.log(`You selected '${selection}'`)
+}))
 
-// 10.
+// 10. When double-clicking a specific h4, turn ALL text blue
+const destinationH4 = document.querySelector('.myDestination h4');
+destinationH4.addEventListener('dblclick', (() => {
+    body.style.color = 'dodgerBlue'
+    destinationH4.textContent = "You double clicked, didn't you?"
+}))
 
 
 
