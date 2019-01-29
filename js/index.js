@@ -78,5 +78,11 @@ destinationH4.addEventListener('dblclick', (() => {
 }))
 
 
-
+// 
+const links = document.querySelectorAll('a')
+links.forEach((item) => {
+    item.addEventListener('click', ((e) => {
+        e.preventDefault();
+    }))
+})
 
