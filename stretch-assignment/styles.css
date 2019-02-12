@@ -4,15 +4,18 @@ body {
 }
 
 .blocks {
+  
   margin-top: 5%;
   display: flex;
   flex-direction: column;
 }
 
 .block {
+  
   width: 100px;
   height: 100px;
   margin: 10px;
+  margin-left: 30px;
 }
 
 .block--red {

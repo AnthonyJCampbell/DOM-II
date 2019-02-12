@@ -8,7 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="js/index.js" async></script>
 
   <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
     <div class="container nav-container">
       <h1 class="logo-heading">Fun Bus</h1>
       <nav class="nav">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" id="firstLink" href="#">Home</a>
         <a class="nav-link" href="#">About Us</a>
         <a class="nav-link" href="#">Blog</a>
         <a class="nav-link" href="#">Contact</a>
@@ -32,7 +32,7 @@
      
   <div class="container home">
     <header class="intro">
-      <img src="img/fun-bus.jpg" alt="bus in the sand">
+      <img draggable="true" src="img/fun-bus.jpg" alt="bus in the sand">
       <h2>Welcome To Fun Bus!</h2>
       <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
     </header>
@@ -64,7 +64,7 @@
     </section>
     <section class="content-pick">
 
-      <div class="destination">
+      <div class="destination myDestination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
@@ -84,6 +84,7 @@
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
+    <textarea name="TextArea" id="TestArea" cols="30" rows="10">Select this text and see what happens!</textarea>
   </footer>
 
 </body>
